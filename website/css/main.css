@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"); /* Remove default styles */
 
 #wrapper {
     max-width: 960px;
@@ -95,6 +95,7 @@ header #search input[type="search"] {
 /* Section */
 section {
     margin: 1% auto 0;
+    padding-bottom: 1%;
 }
 
 section > p {
@@ -119,7 +120,6 @@ footer {
     color: white;
     background-color: rgba(1, 76, 165, 0.8);
 
-    margin-top: 1%;
     padding: 1px;
 
     width: 100%;
