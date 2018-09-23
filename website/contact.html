@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Healthy Food Recipes">
+    <meta name="keywords" content="healthy, recipe, food">
+
+    <title>Good Food Mood - Contact Us</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="small">
+        <h1 id="logo">Good Food Mood</h1>
+    </header>
+
+    <section>
+        <form id="contact" action="success.html" method="post">
+            <h2>Got any suggestion about this website or you just want to get in touch?</h2>
+
+            <div class="group">
+                <label for="name" class="required">Name</label>
+                <input type="text" name="name" id="name" placeholder="Ola Norman">
+                <span class="error" id="error-name">Remember to write your name</span>
+            </div>
+
+            <div class="group">
+                <label for="email" class="required">eMail</label>
+                <input type="email" name="email" id="email" placeholder="example@domain.com">
+                <span class="error" id="error-email">The eMail has to be in the format: somthing@domain.com</span>
+            </div>
+
+            <div class="group">
+                <label for="msg" class="required">Message</label>
+                <textarea name="msg" id="msg" placeholder="Leave your message here"></textarea>
+                <span class="error" id="error-msg">Did you remember to write the feedback?</span>
+            </div>
+
+            <div class="group">
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p id="copyright">&copy; 2018 Copyright: Mathias Nervik</p>
+        <p>More Info: <a href="https://www.edamam.com/" target="_blank">www.edamam.com</a></p>
+    </footer>
+</div>
+<script src="js/contact.js"></script>
+</body>
+</html>

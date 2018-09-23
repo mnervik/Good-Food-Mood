@@ -1,0 +1,100 @@
+#search-result {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.recipe {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+
+    background-color: #FFF;
+    text-decoration: none;
+
+    width: 30%;
+    vertical-align: top;
+}
+
+.recipe:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.recipe .title {
+    color: black;
+    text-decoration: none;
+}
+
+.recipe .title:hover {
+    text-decoration: underline;
+}
+
+.recipe img {
+    padding: 3% 0;
+    width: 95%;
+}
+
+.recipe .calories, .recipe .ingredients {
+    color: green;
+    font-size: small;
+    display: inline-block;
+}
+
+.recipe .ingredients:after {
+    content: " Ingredients";
+    text-transform: uppercase;
+    color: black;
+}
+
+.recipe .calories:after {
+    content: " Calories";
+    text-transform: uppercase;
+    color: black;
+}
+
+.btn.read-more {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    max-width: 150px;
+}
+
+@media screen and (max-width: 651px) {
+    .recipe {
+        width: 100%;
+        padding-left: 4px;
+        max-height: 200px;
+    }
+
+    .recipe img {
+        float: left;
+        max-height: 200px;
+        width: auto;
+
+        position: relative;
+        top: 50%;
+
+        padding: 1%;
+        box-sizing: border-box;
+    }
+
+    .read-more {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header #search {
+        transform: translateX(0);
+        width: 100%;
+    }
+
+    header #search input[type="search"] {
+        width: 50%;
+    }
+
+    header #search input[type="submit"] {
+        width: 10%;
+    }
+}
